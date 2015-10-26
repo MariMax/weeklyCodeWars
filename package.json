@@ -1,0 +1,14 @@
+{
+  "name": "weekly-code-wars",
+  "version": "0.0.1",
+  "description": "setup to run tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --harmony ./node_modules/jasmine-node/bin/jasmine-node spec"
+  },
+  "author": "Maxim Milovanov",
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
