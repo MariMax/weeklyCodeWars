@@ -42,19 +42,19 @@ describe('concat arrays', function() {
         expect(concatenator(['abc', 'def', 4, 'ghi'], [0, 0, 0, 0, 'hi'])).toEqual(['abc0', 'def0', 4, 'ghi0', 'hi']);
     });
 
-    it('concat arrays when long array consist only from zeros', function() {
+    it('concat arrays when long array consists only from zeros', function() {
         expect(concatenator(['abc', 'def', 4, 'ghi'], [0, 0, 0, 0, 0, 0])).toEqual(['abc0', 'def0', 4, 'ghi0', 0, 0]);
     });
 
-    it('concat arrays when long array consist null', function() {
+    it('concat arrays when long array consists null', function() {
         expect(concatenator(['abc', 'def', 4, 'ghi'], [0, 0, 0, 0, 0, 0, null])).toEqual(['abc0', 'def0', 4, 'ghi0', 0, 0, null]);
     });
 
-    it('concat arrays when long array consist null', function() {
+    it('concat arrays when long array consists null', function() {
         expect(concatenator(['abc', 'def', 4, 'ghi'], [0, 0, 0, undefined, 0, 0, null])).toEqual(['abc0', 'def0', 4, 'ghi', 0, 0, null]);
     });
 
-    it('concat arrays when both arrays consist undefined in the same place', function() {
+    it('concat arrays when both arrays consists undefined in the same place', function() {
         expect(concatenator(['abc', 'def', undefined, 'ghi'], [0, 0, undefined, 0, undefined, 0, 0, null])).toEqual(['abc0', 'def0', undefined, 'ghi0', undefined, 0, 0, null]);
     });
 
