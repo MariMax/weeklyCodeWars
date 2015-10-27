@@ -77,4 +77,8 @@ describe('concat arrays', function() {
     it('concat arrays with empty strings in second array', function() {
         expect(concatenator(['abc', 0], [0, ''])).toEqual(['abc0', '0']);
     });
+
+    it('concat arrays with empty strings in second array', function() {
+        expect(concatenator(['abc', ''], [0, ''])).toEqual(['abc0', '']);
+    });
 });
