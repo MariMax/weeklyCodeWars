@@ -58,6 +58,6 @@ describe('object map', function() {
 
   it('undefined treasure', function() {
     var map = ['response2', 3, 'element'];
-    expect(findTreasure(testObject, map)).toEqual(undefined);
+    expect(findTreasure(testObject, map)).toBeUndefined();
   });
 });

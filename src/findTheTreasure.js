@@ -5,7 +5,7 @@
 
 let findTheTreasure = (targetObject, objectMap) => {
     //wrong input or wrong way
-    if (objectMap.length === 0||targetObject[objectMap[0]]===undefined) return null;
+    if (objectMap.length === 0||!targetObject.hasOwnProperty(objectMap[0])) return null;
     //we found the treasure
     if (objectMap.length===1&&targetObject.hasOwnProperty(objectMap[0])){
         return targetObject[objectMap[0]];
